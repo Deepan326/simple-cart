@@ -28,7 +28,7 @@ export default function Nav() {
         window.dispatchEvent(new Event("cartUpdated"));
     }
 
-    const totalPrice=cart.Items.reduce((sum,items)=>{
+    const totalPrice=cartItems.reduce((sum,item)=>{
         return sum + parseFloat(item.price.replace("$",""));
     },0).toFixed(2);
 
@@ -51,17 +51,20 @@ export default function Nav() {
           <div
             className="cart-icon position-relative"
             style={{ cursor: "pointer" }}
+            onClick={()=>setIsCartOpen(true)}
           >
             <i className="bi bi-bag fs-4"></i>
             <span className="cart-qount">0</span>
           </div>
         </nav>
       </div>
+
+
       <div className={`cart-sidebar ${isCartOpen ? "open" : ""}`}>
         <div className="cart-header d-flex justify-content-between align-items-center p-3 border-bottom">
-          <h5 className="m-0">Ypur Cart</h5>
+          <h5 className="m-0">Your Cart</h5>
           <button
-            className="btn btn-sm btn-outline-dark text-white"
+            className="btn btn-sm btn-outline-dark bg-dark text-white"
             onClick={() => setIsCartOpen(false)}
           >
             Close

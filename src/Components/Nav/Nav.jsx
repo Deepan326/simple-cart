@@ -46,6 +46,10 @@ export default function Nav() {
               className="form-control"
               placeholder="Search for products..."
               style={{ maxWidth: "500px" }}
+              onChange={(e)=>{
+                const query=e.target.value
+                window.dispatchEvent(new CustomEvent(`searchQueryChanged`,{detail:query}))
+              }}
             />
           </div>
           <div
@@ -54,7 +58,9 @@ export default function Nav() {
             onClick={()=>setIsCartOpen(true)}
           >
             <i className="bi bi-bag fs-4"></i>
-            <span className="cart-qount">0</span>
+            <span className="cart-qount">
+              {cartCount}
+            </span>
           </div>
         </nav>
       </div>
@@ -84,7 +90,7 @@ export default function Nav() {
                   className="me-3 rounded"
                 />
                 <div className="flex-grow-1">
-                  <h6 className="mb-1">{item.Productname}</h6>
+                  <h6 className="mb-1">{item.ProductName}</h6>
                   <p className="mb-1">{item.price}</p>
                 </div>
                 <button

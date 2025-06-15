@@ -1,44 +1,45 @@
+
 [
     {
     "id":1,
-    "image":"",
-    "secondImage":"",
+    "image":"../public/assets/product1.jpg",
+    "secondImage":"../public/assets/product1.jpg",
     "ProductName":"AirRunner sneakers",
     "price":"$90.00",
     "tag":"New"
 },
  {
     "id":2,
-    "image":"",
-    "secondImage":"",
+    "image":"../public/assets/product2.jpg",
+    "secondImage":"../public/assets/product2.jpg",
     "ProductName":"AirRunner sneakers",
     "price":"$90.00",
     "tag":"New"
 }, {
     "id":3,
-    "image":"",
-    "secondImage":"",
+    "image":"../public/assets/product3.jpg",
+    "secondImage":"../public/assets/product3.jpg",
     "ProductName":"Sports sneakers",
     "price":"$60.00",
     "tag":"Sale"
 }, {
     "id":4,
-    "image":"",
-    "secondImage":"",
+    "image":"../public/assets/product4.jpg",
+    "secondImage":"../public/assets/product4.jpg",
     "ProductName":"Velocity Running",
     "price":"$70.00",
     "tag":"Sale"
 }, {
     "id":5,
-    "image":"",
-    "secondImage":"",
+    "image":"../public/assets/product5.jpg",
+    "secondImage":"../public/assets/product5.jpg",
     "ProductName":"Boot shoes",
     "price":"$110.00",
     "tag":"New"
 }, {
     "id":6,
-    "image":"",
-    "secondImage":"",
+    "image":"../public/assets/product6.jpg",
+    "secondImage":"../public/assets/product6.jpg",
     "ProductName":"AirRunner sneakers",
     "price":"$90.00",
     "oldPrice":"$120.00",
@@ -46,15 +47,15 @@
 },
 {
     "id":7,
-    "image":"",
-    "secondImage":"",
+    "image":"../public/assets/product1.jpg",
+    "secondImage":"./public/assets/product1.jpg",
     "ProductName":"Leather Shoes",
     "price":"$90.00"
 },
 {
     "id":8,
-    "image":"",
-    "secondImage":"",
+    "image":"../public/assets/product3.jpg",
+    "secondImage":"../public/assets/product3.jpg",
     "ProductName":"Flexible sports shoes",
     "price":"$90.00",
     "tag":"Sale"

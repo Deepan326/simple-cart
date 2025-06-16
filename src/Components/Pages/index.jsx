@@ -122,7 +122,7 @@ const Index = () => {
                         alt="not available"
                       />
                       <img
-                        src={product.secondImage}
+                        src={product.image}
                         className="img-fluid"
                         alt=""
                       />

@@ -1,7 +1,78 @@
 import React, { useEffect, useState } from "react";
-import productsData from "../../Products.json";
+// import productsData from "../../Products.json";
+import img1 from "../../assets/product1.jpg"
+import img2 from "../../assets/product2.jpg"
+import img3 from "../../assets/product3.jpg"
+import img4 from "../../assets/product4.jpg"
+import img5 from "../../assets/product5.jpg"
+import img6 from "../../assets/product6.jpg"
+
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
+
+const productsData=[
+    {
+    "id":1,
+    "image":img1,
+    "secondImage":img1,
+    "ProductName":"AirRunner sneakers",
+    "price":"$90.00",
+    "tag":"New"
+},
+ {
+    "id":2,
+    "image":img2,
+    "secondImage":img2,
+    "ProductName":"AirRunner sneakers",
+    "price":"$90.00",
+    "tag":"New"
+}, {
+    "id":3,
+    "image":img3,
+    "secondImage":img3,
+    "ProductName":"Sports sneakers",
+    "price":"$60.00",
+    "tag":"Sale"
+}, {
+    "id":4,
+    "image":img4,
+    "secondImage":img4,
+    "ProductName":"Velocity Running",
+    "price":"$70.00",
+    "tag":"Sale"
+}, {
+    "id":5,
+    "image":img5,
+    "secondImage":img5,
+    "ProductName":"Boot shoes",
+    "price":"$110.00",
+    "tag":"New"
+}, {
+    "id":6,
+    "image":img6,
+    "secondImage":img6,
+    "ProductName":"AirRunner sneakers",
+    "price":"$90.00",
+    "oldPrice":"$120.00",
+    "tag":"New"
+},
+{
+    "id":7,
+    "image":img4,
+    "secondImage":img4,
+    "ProductName":"Leather Shoes",
+    "price":"$90.00"
+},
+{
+    "id":8,
+    "image":img1,
+    "secondImage":img1,
+    "ProductName":"Flexible sports shoes",
+    "price":"$90.00",
+    "tag":"Sale"
+}
+]
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -122,7 +193,7 @@ const Index = () => {
                         alt="not available"
                       />
                       <img
-                        src={product.image}
+                        src={product.secondImage}
                         className="img-fluid"
                         alt=""
                       />
